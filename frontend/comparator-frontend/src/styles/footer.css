@@ -1,0 +1,16 @@
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f2f5;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-highlight {
+    font-weight: bold;
+    color: #007bff;
+}
