@@ -1,17 +1,14 @@
 import React, {useState} from "react";
 import LoginView from '../views/LoginView'
-import {buildApiUrl} from "../utils/apiUrl";
 
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const uri = buildApiUrl(import.meta.env.VITE_LOGIN_PATH);
-    console.log("Uri is ", uri);
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await fetch(uri, {
+            const response = await fetch("http://localhost:5000/api/login", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({email, password}),
