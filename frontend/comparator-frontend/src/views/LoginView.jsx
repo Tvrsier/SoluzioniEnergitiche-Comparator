@@ -12,7 +12,7 @@ function LoginView({email, setEmail, password, setPassword, handleSubmit}) {
             </div>
             <div className={"login-box"}>
                 <span>Accedi per iniziare la sessione</span>
-                <from onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <div className={"form-group"}>
                         <label htmlFor={"email"}>Email</label>
                         <input
@@ -42,7 +42,7 @@ function LoginView({email, setEmail, password, setPassword, handleSubmit}) {
                         <a href={"/forgot-password"}>Ho dimenticato la password</a>
                     </div>
                     <button type={"submit"} className={"btn-submit"}>Sign in</button>
-                </from>
+                </form>
             </div>
         </div>
     );
