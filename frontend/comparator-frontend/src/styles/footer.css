@@ -1,12 +1,14 @@
 .footer {
+    grid-area: footer;
     text-align: center;
-    padding: 10px 0;
-    background-color: #f0f2f5;
+    padding: 3px 0; /* Ridotto rispetto ai 10px originali */
+    background-color: inherit;
     color: #333;
-    position: fixed;
+    position: page;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
+    height: 100%;
+    font-size: 12px; /* Ridotto rispetto ai 14px originali */
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
